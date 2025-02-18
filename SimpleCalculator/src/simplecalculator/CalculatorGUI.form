@@ -23,143 +23,122 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-
-          <Component id="jPane1" alignment="0" max="32767" attributes="0"/>
-
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-
-          <Component id="jPane1" alignment="0" max="32767" attributes="0"/>
-
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-
-    <Container class="javax.swing.JPanel" name="jPane1">
-
+    <Container class="javax.swing.JPanel" name="jPanel1">
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jdibide" min="-2" max="-2" attributes="0"/>
-                      <Component id="jmult" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="177" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="t1" min="-2" max="-2" attributes="0"/>
-                              <Component id="num1" min="-2" pref="85" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="t2" min="-2" max="-2" attributes="0"/>
-                              </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                  <Component id="num2" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="n1" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="n2" min="-2" pref="71" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="addd" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="multi" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="dev" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jAdd" max="32767" attributes="0"/>
-                          <Component id="jSubtract" pref="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="minus" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="177" max="32767" attributes="0"/>
+                          <Component id="Result" min="-2" pref="71" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="192" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="t3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jResult" min="-2" pref="71" max="-2" attributes="0"/>
-                  </Group>
-
-                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="TT1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="TT2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="n1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="n2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="number1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="number2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="addd" min="-2" pref="22" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="jmult" min="-2" max="-2" attributes="0"/>
+                          <Component id="minus" min="-2" pref="29" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                          <Component id="TT3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jres" min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="Result" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jdibide" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="116" max="32767" attributes="0"/>
-
+                  <Component id="multi" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="dev" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="39" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-
-        <Component class="javax.swing.JTextField" name="number1">
+        <Component class="javax.swing.JTextField" name="n1">
         </Component>
-        <Component class="javax.swing.JTextField" name="number2">
+        <Component class="javax.swing.JTextField" name="n2">
         </Component>
-        <Component class="javax.swing.JTextField" name="jres">
-        </Component>
-        <Component class="javax.swing.JButton" name="jmult">
+        <Component class="javax.swing.JButton" name="addd">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#x423;&#x43c;&#x43d;&#x43e;&#x436;&#x438;&#x442;&#x44c;"/>
+            <Property name="text" type="java.lang.String" value="&#x421;&#x43b;&#x43e;&#x436;&#x435;&#x43d;&#x438;&#x435;"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jmultActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adddActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jdibide">
+        <Component class="javax.swing.JButton" name="minus">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#x420;&#x430;&#x437;&#x434;&#x435;&#x43b;&#x438;&#x442;&#x44c;"/>
+            <Property name="text" type="java.lang.String" value="&#x412;&#x44b;&#x447;&#x438;&#x442;&#x430;&#x43d;&#x438;&#x435;"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jdibideActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="minusActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="TT1">
+        <Component class="javax.swing.JButton" name="multi">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#x427;&#x438;&#x441;&#x43b;&#x43e; 1"/>
+            <Property name="text" type="java.lang.String" value="&#x423;&#x43c;&#x43d;&#x43e;&#x436;&#x435;&#x43d;&#x438;&#x435;"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="multiActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="TT2">
+        <Component class="javax.swing.JButton" name="dev">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&#x427;&#x438;&#x441;&#x43b;&#x43e; 2"/>
+            <Property name="text" type="java.lang.String" value="&#x414;&#x435;&#x43b;&#x435;&#x43d;&#x438;&#x435;"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="devActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="TT3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="&#x420;&#x430;&#x437;&#x434;&#x435;&#x43b;&#x438;&#x442;&#x44c;"/>
-          </Properties>
-
+        <Component class="javax.swing.JTextField" name="Result">
         </Component>
       </SubComponents>
     </Container>
