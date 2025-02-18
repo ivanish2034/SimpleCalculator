@@ -11,7 +11,7 @@ public class Calculator {
     public double divide(double a, double b) throws IllegalArgumentException {
   
         if (b == 0) {
-            throw new IllegalArgumentException("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+            throw new IllegalArgumentException("Ошибочка");
         }
         return a / b;
     }
