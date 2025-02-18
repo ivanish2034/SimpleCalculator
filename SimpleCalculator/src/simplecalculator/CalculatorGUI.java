@@ -6,8 +6,7 @@ package simplecalculator;
 
 /**
  *
- * @author Andrey
- */
+
 public class CalculatorGUI extends javax.swing.JFrame {
 
     /**
@@ -26,6 +25,8 @@ public class CalculatorGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+
+  
         jPane1 = new javax.swing.JPanel();
         number1 = new javax.swing.JTextField();
         number2 = new javax.swing.JTextField();
@@ -35,28 +36,44 @@ public class CalculatorGUI extends javax.swing.JFrame {
         TT1 = new javax.swing.JLabel();
         TT2 = new javax.swing.JLabel();
         TT3 = new javax.swing.JLabel();
+        jAdd = new javax.swing.JButton();
+        jSubtract = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jmult.setText("Умножить");
+        jmult.setText("Г“Г¬Г­Г®Г¦ГЁГІГј");
         jmult.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmultActionPerformed(evt);
             }
         });
 
-        jdibide.setText("Разделить");
+        jdibide.setText("ГђГ Г§Г¤ГҐГ«ГЁГІГј");
         jdibide.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jdibideActionPerformed(evt);
             }
         });
+      
+        jAdd.setText("Г‘Г«Г®Г¦ГҐГ­ГЁГҐ");
+        jAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jAddActionPerformed(evt);
+            }
+        });
 
-        TT1.setText("Число 1");
+        jSubtract.setText("Г‚Г»Г·ГЁГІГ Г­ГЁГҐ");
+        jSubtract.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jSubtractActionPerformed(evt);
+            }
+        });
 
-        TT2.setText("Число 2");
+        TT1.setText("Г—ГЁГ±Г«Г® 1");
 
-        TT3.setText("Разделить");
+        TT2.setText("Г—ГЁГ±Г«Г® 2");
+
+        TT3.setText("ГђГ Г§Г¤ГҐГ«ГЁГІГј");
 
         javax.swing.GroupLayout jPane1Layout = new javax.swing.GroupLayout(jPane1);
         jPane1.setLayout(jPane1Layout);
@@ -112,66 +129,78 @@ public class CalculatorGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jdibide)
                 .addContainerGap(116, Short.MAX_VALUE))
+
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+
             .addComponent(jPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void jdibideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jdibideActionPerformed
         String inputText = number1.getText();
+
         double a = 0; 
         try {
             a = Double.parseDouble(inputText);
         } catch (NumberFormatException e) {
-            System.out.println("Введите корректное число.");
+            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
         }
-        System.out.println("Значение a: " + a);
+        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ a: " + a);
         
+
         String inputText2 = number2.getText();
+
         double b = 0; 
         try {
             b = Double.parseDouble(inputText2);
         } catch (NumberFormatException e) {
-            System.out.println("Введите корректное число.");
+            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
         }
-        System.out.println("Значение b: " + b);
+        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ b: " + b);
         
         Calculator calculator = new Calculator();
+
         double result = calculator.divide(a, b);
         jres.setText(String.valueOf(result));
     }//GEN-LAST:event_jdibideActionPerformed
 
     private void jmultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmultActionPerformed
         String inputText = number1.getText();
+
         double a = 0; 
         try {
             a = Double.parseDouble(inputText);
         } catch (NumberFormatException e) {
-            System.out.println("Введите корректное число.");
+            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
         }
-        System.out.println("Значение a: " + a);
+        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ a: " + a);
         
+
         String inputText2 = number2.getText();
+
         double b = 0; 
         try {
             b = Double.parseDouble(inputText2);
         } catch (NumberFormatException e) {
-            System.out.println("Введите корректное число.");
+            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
         }
-        System.out.println("Значение b: " + b);
+        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ b: " + b);
         
         Calculator calculator = new Calculator();
+
         double result = calculator.multiply(a, b);
         jres.setText(String.valueOf(result));
     }//GEN-LAST:event_jmultActionPerformed
@@ -191,5 +220,6 @@ public class CalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JTextField jres;
     private javax.swing.JTextField number1;
     private javax.swing.JTextField number2;
+
     // End of variables declaration//GEN-END:variables
 }

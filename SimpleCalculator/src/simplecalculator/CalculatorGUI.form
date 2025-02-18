@@ -23,21 +23,28 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
+
           <Component id="jPane1" alignment="0" max="32767" attributes="0"/>
+
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+
           <Component id="jPane1" alignment="0" max="32767" attributes="0"/>
+
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
+
     <Container class="javax.swing.JPanel" name="jPane1">
+
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
@@ -72,12 +79,14 @@
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
+
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="TT1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -103,11 +112,13 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jdibide" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="116" max="32767" attributes="0"/>
+
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
+
         <Component class="javax.swing.JTextField" name="number1">
         </Component>
         <Component class="javax.swing.JTextField" name="number2">
@@ -144,6 +155,7 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="&#x420;&#x430;&#x437;&#x434;&#x435;&#x43b;&#x438;&#x442;&#x44c;"/>
           </Properties>
+
         </Component>
       </SubComponents>
     </Container>
