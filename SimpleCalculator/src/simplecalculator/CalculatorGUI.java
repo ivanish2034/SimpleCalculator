@@ -6,7 +6,8 @@ package simplecalculator;
 
 /**
  *
-
+ * @author ivis2
+ */
 public class CalculatorGUI extends javax.swing.JFrame {
 
     /**
@@ -25,50 +26,44 @@ public class CalculatorGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-
-  
-        jPane1 = new javax.swing.JPanel();
-        number1 = new javax.swing.JTextField();
-        number2 = new javax.swing.JTextField();
-        jres = new javax.swing.JTextField();
-        jmult = new javax.swing.JButton();
-        jdibide = new javax.swing.JButton();
-        TT1 = new javax.swing.JLabel();
-        TT2 = new javax.swing.JLabel();
-        TT3 = new javax.swing.JLabel();
-        jAdd = new javax.swing.JButton();
-        jSubtract = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        n1 = new javax.swing.JTextField();
+        n2 = new javax.swing.JTextField();
+        addd = new javax.swing.JButton();
+        minus = new javax.swing.JButton();
+        multi = new javax.swing.JButton();
+        dev = new javax.swing.JButton();
+        Result = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jmult.setText("Г“Г¬Г­Г®Г¦ГЁГІГј");
-        jmult.addActionListener(new java.awt.event.ActionListener() {
+        addd.setText("Сложение");
+        addd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jmultActionPerformed(evt);
+                adddActionPerformed(evt);
             }
         });
 
-        jdibide.setText("ГђГ Г§Г¤ГҐГ«ГЁГІГј");
-        jdibide.addActionListener(new java.awt.event.ActionListener() {
+        minus.setText("Вычитание");
+        minus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jdibideActionPerformed(evt);
-            }
-        });
-      
-        jAdd.setText("Г‘Г«Г®Г¦ГҐГ­ГЁГҐ");
-        jAdd.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jAddActionPerformed(evt);
+                minusActionPerformed(evt);
             }
         });
 
-        jSubtract.setText("Г‚Г»Г·ГЁГІГ Г­ГЁГҐ");
-        jSubtract.addActionListener(new java.awt.event.ActionListener() {
+        multi.setText("Умножение");
+        multi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSubtractActionPerformed(evt);
+                multiActionPerformed(evt);
             }
         });
 
+        dev.setText("Деление");
+        dev.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                devActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -79,139 +74,172 @@ public class CalculatorGUI extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(t1)
-                            .addComponent(num1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(t2))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
-                                .addComponent(num2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jSubtract, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(t3)
-                    .addComponent(jResult, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49))
-
+                                .addComponent(n1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(n2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(addd)
+                            .addComponent(multi)
+                            .addComponent(dev))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(minus)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 177, Short.MAX_VALUE)
+                        .addComponent(Result, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(45, 45, 45))))
         );
-        jPane1Layout.setVerticalGroup(
-            jPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPane1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(jPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TT1)
-                    .addComponent(TT2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(number1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(number2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPane1Layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(jmult))
-                    .addGroup(jPane1Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(TT3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jres, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jdibide)
-                .addContainerGap(116, Short.MAX_VALUE))
-
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(n1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(n2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addComponent(addd, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(minus, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(Result, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8, 8, 8)))
+                .addComponent(multi)
+                .addGap(18, 18, 18)
+                .addComponent(dev)
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-
-            .addComponent(jPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-
-    private void jdibideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jdibideActionPerformed
-        String inputText = number1.getText();
-
+    private void adddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adddActionPerformed
+        String inputText = n1.getText();
         double a = 0; 
         try {
             a = Double.parseDouble(inputText);
         } catch (NumberFormatException e) {
-            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
+            System.out.println("Введите корректное число.");
         }
-        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ a: " + a);
+        System.out.println("Значение a: " + a);
         
-
-        String inputText2 = number2.getText();
-
+        String inputText2 = n2.getText();
         double b = 0; 
         try {
             b = Double.parseDouble(inputText2);
         } catch (NumberFormatException e) {
-            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
+            System.out.println("Введите корректное число.");
         }
-        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ b: " + b);
+        System.out.println("Значение b: " + b);
         
         Calculator calculator = new Calculator();
+        double result = calculator.add(a, b);
+        Result.setText(String.valueOf(result));
+    }//GEN-LAST:event_adddActionPerformed
 
-        double result = calculator.divide(a, b);
-        jres.setText(String.valueOf(result));
-    }//GEN-LAST:event_jdibideActionPerformed
-
-    private void jmultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmultActionPerformed
-        String inputText = number1.getText();
-
+    private void multiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiActionPerformed
+        String inputText = n1.getText();
         double a = 0; 
         try {
             a = Double.parseDouble(inputText);
         } catch (NumberFormatException e) {
-            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
+            System.out.println("Введите корректное число.");
         }
-        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ a: " + a);
+        System.out.println("Значение a: " + a);
         
-
-        String inputText2 = number2.getText();
-
+        String inputText2 = n2.getText();
         double b = 0; 
         try {
             b = Double.parseDouble(inputText2);
         } catch (NumberFormatException e) {
-            System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г°Г°ГҐГЄГІГ­Г®ГҐ Г·ГЁГ±Г«Г®.");
+            System.out.println("Введите корректное число.");
         }
-        System.out.println("Г‡Г­Г Г·ГҐГ­ГЁГҐ b: " + b);
+        System.out.println("Значение b: " + b);
         
         Calculator calculator = new Calculator();
-
         double result = calculator.multiply(a, b);
-        jres.setText(String.valueOf(result));
-    }//GEN-LAST:event_jmultActionPerformed
+        Result.setText(String.valueOf(result));
+    }//GEN-LAST:event_multiActionPerformed
+
+    private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
+        String inputText = n1.getText();
+        double a = 0; 
+        try {
+            a = Double.parseDouble(inputText);
+        } catch (NumberFormatException e) {
+            System.out.println("Введите корректное число.");
+        }
+        System.out.println("Значение a: " + a);
+        
+        String inputText2 = n2.getText();
+        double b = 0; 
+        try {
+            b = Double.parseDouble(inputText2);
+        } catch (NumberFormatException e) {
+            System.out.println("Введите корректное число.");
+        }
+        System.out.println("Значение b: " + b);
+        
+        Calculator calculator = new Calculator();
+        double result = calculator.subtract(a, b);
+        Result.setText(String.valueOf(result));
+    }//GEN-LAST:event_minusActionPerformed
+
+    private void devActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_devActionPerformed
+        String inputText = n1.getText();
+        double a = 0; 
+        try {
+            a = Double.parseDouble(inputText);
+        } catch (NumberFormatException e) {
+            System.out.println("Введите корректное число.");
+        }
+        System.out.println("Значение a: " + a);
+        
+        String inputText2 = n2.getText();
+        double b = 0; 
+        try {
+            b = Double.parseDouble(inputText2);
+        } catch (NumberFormatException e) {
+            System.out.println("Введите корректное число.");
+        }
+        System.out.println("Значение b: " + b);
+        
+        Calculator calculator = new Calculator();
+        double result = calculator.divide(a, b);
+        Result.setText(String.valueOf(result));
+    }//GEN-LAST:event_devActionPerformed
 
     /**
      * @param args the command line arguments
      */
- 
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel TT1;
-    private javax.swing.JLabel TT2;
-    private javax.swing.JLabel TT3;
-    private javax.swing.JPanel jPane1;
-    private javax.swing.JButton jdibide;
-    private javax.swing.JButton jmult;
-    private javax.swing.JTextField jres;
-    private javax.swing.JTextField number1;
-    private javax.swing.JTextField number2;
-
+    private javax.swing.JTextField Result;
+    private javax.swing.JButton addd;
+    private javax.swing.JButton dev;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton minus;
+    private javax.swing.JButton multi;
+    private javax.swing.JTextField n1;
+    private javax.swing.JTextField n2;
     // End of variables declaration//GEN-END:variables
 }
